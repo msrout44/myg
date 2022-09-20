@@ -3,6 +3,3 @@
 172.31.13.8
 
 
-[mysampleUR:vars]
-mywebpackageonubuntu=apache2
-mywebpackageonredhat=httpd
