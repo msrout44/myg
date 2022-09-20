@@ -4,5 +4,5 @@
 
 
 [mysampleUR:vars]
-mywebpackageonubuntu=apache222222
+mywebpackageonubuntu=apache2
 mywebpackageonredhat=httpd
