@@ -1,5 +1,5 @@
 ---
-- hosts: mywebservers
+- hosts: mysampleUR
   become: yes
   tasks:
   - name: install java on ubuntu 18 nodes
@@ -8,7 +8,7 @@
       state: present
     when: ansible_os_family =="Debian"
   
-  - name: install java on redhat8 nodes
+  - name: install java on redhat 8 nodes
     yum: 
      name: "{{myjavaonredhat}}"
      state: present
