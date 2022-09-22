@@ -8,8 +8,9 @@
       state: present
     when: ansible_os_family =="Debian"
   
-  - name: install java on redhat 8 nodes
+  - name: install java on redhat8 nodes
     yum: 
      name: "{{myjavaonredhat}}"
      state: present
     when: ansible_os_family =="RedHat" 
+
