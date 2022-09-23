@@ -2,7 +2,7 @@
 - hosts: mysampleUR
   become: yes
   tasks:
-  - name: install java on ubuntu 16 nodes
+  - name: install java on ubuntu 18 nodes
     apt:
       name: "{{myjavaonubuntu}}"
       state: present
