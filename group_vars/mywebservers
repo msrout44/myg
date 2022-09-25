@@ -1,5 +1,5 @@
 ---
-var: value
+var: values
 mywebpackageonubuntu: apache2
 mywebpackageonredhat: httpd
 
