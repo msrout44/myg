@@ -1,10 +1,7 @@
 ---
-var: values
+var: value
 mrunmaya: apache2
 rout: httpd
-
-
-
 
 myjavaonubuntu: openjdk-8-jre
 myjavaonredhat: java-1.8.0-openjdk
