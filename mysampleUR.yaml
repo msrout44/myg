@@ -1,5 +1,7 @@
 ---
-- hosts: mysampleUR
+- hosts: all
+  vars:
+    mrunmaya: apache2
   become: yes
   tasks: 
   - name: i want to install web server on ubuntu16 nodes
@@ -7,12 +9,14 @@
       name: "{{mrunmaya}}"
       state: present
     when: ansible_os_family =="Debian"
-  - name: i want to start webserver on ubuntu16 nodes
+  - name: i want to start webserver on ubuntu18 nodes
     service: 
        name: "{{mrunmaya}}"
        state: started
     when: ansible_os_family =="Debian"
 
+    vars:
+    rout: httpd
   - name: i want to install web server on RedHat nodes
     yum:
       name: "{{rout}}"
