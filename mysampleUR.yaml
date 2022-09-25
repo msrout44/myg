@@ -1,33 +1,28 @@
 ---
 - hosts: mysampleUR
-  vars:
-    mrunmaya: apache2
   become: yes
   tasks: 
-  - name: i want to install web server on ubuntu16 nodes
+  - name: i want to install web server on ubuntu18 nodes
     apt: 
-      name: "{{mrunmaya}}"
+      name: "{{mywebpackageonubuntu}}"
       state: present
     when: ansible_os_family =="Debian"
-  - name: i want to start webserver on ubuntu18 nodes
+  - name: i want to start webserver on ubuntu16 nodes
     service: 
-       name: "{{mrunmaya}}"
+       name: "{{mywebpackageonubuntu}}"
        state: started
     when: ansible_os_family =="Debian"
 
-    vars:
-    rout: httpd
-  - name: i want to install web server on RedHat nodes
+  - name: i want to install web server on RedHat node
     yum:
-      name: "{{rout}}"
+      name: "{{mywebpackageonredhat}}"
       state: present
     when: ansible_os_family =="RedHat"
-  - name: i want to start web servers on RedHat nodes
+  - name: i want to start web servers on RedHat node
     service:
-      name: "{{rout}}"
+      name: "{{mywebpackageonredhat}}"
       state: started
     when: ansible_os_family =="RedHat"
-
 
 
 
