@@ -1,4 +1,4 @@
 ---
-vars: value
+var: value
 mrunmaya: apache2
 rout: httpd
