@@ -1,0 +1,5 @@
+---
+- hosts:: mywebserver
+  become: yes
+  roles:
+  - {role: mywebserver, when_os_family=="Debian"}
