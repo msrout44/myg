@@ -1,0 +1,9 @@
+---
+- name: update
+  apt:
+   update_catch: yes
+
+- name: install java
+  apt:
+    name: default-jdk
+    stste: present
