@@ -4,6 +4,6 @@
 - include_tasks: installjava.yml
 - include_tasks: createtomcaruser.yml
 - include_tasks: installtomcat.yml
-- include_tasks: installtomcat.yml
+- include_tasks: permissions.yml
 - include_tasks: servicefile.yml
 - include_tasks: starttomcat.yml
