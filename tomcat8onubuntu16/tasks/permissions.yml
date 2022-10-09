@@ -1,5 +1,5 @@
 ---
-- name: give th etomcat group ownership
+- name: give the tomcat group ownership
   file:
     path: /opt/tomcat
     state: directory
