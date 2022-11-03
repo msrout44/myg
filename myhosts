@@ -1,7 +1,6 @@
 [mysample]
-172.31.13.237
-172.31.13.8
+172.31.20.101
 
 
-[myapplicationservsers]
-172.31.21.30
+[myapplicationservers]
+172.31.20.101
